@@ -15,4 +15,13 @@ use pruebatecnica;
 
 **Cada vez que se ejecuta la aplicación como Springoot App, las tablas se borran y se vuelven a generar con la información inicial**
 
+**Usuarios para crear token**
+	Rol usuario:
+		username: user
+		password : password	
+	
+	Rol administrador
+		username: admin
+		password : admin
+	
 **Se comparte una colección de postman con request para prueba**
