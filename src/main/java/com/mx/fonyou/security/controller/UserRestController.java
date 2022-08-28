@@ -56,17 +56,17 @@ public class UserRestController {
         return user;
     }
     
-    @RequestMapping(value = "rest/estudiantes", method = RequestMethod.GET)
+    @RequestMapping(value = "rest/listaEstudiantes", method = RequestMethod.GET)
     public List<EstudianteEntity> findAll() {
         return estudianteRepository.findAll();
     }
     
-    @RequestMapping(value = "rest/preguntas", method = RequestMethod.GET)
+    @RequestMapping(value = "rest/listaPreguntas", method = RequestMethod.GET)
     public List<PreguntasEntity> listaPreguntas() {
         return preguntasRepository.findAll();
     }
     
-    @RequestMapping(value = "rest/examen", method = RequestMethod.GET)
+    @RequestMapping(value = "rest/listaExamen", method = RequestMethod.GET)
     public List<ExamenEntity> findAllExamen() {
         return examenRepository.findAll();
     }
