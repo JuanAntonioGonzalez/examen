@@ -9,6 +9,10 @@ use pruebatecnica;
 
 **Configurar el archivo application.yml con los datos para base de datos MySQL**
 
+**Configurar el buildpath para java jdk 1.8 (en caso de ser necesario)**
+
+**Construir el proyecto con mvn clean install**
+
 **Cada vez que se ejecuta la aplicación como Springoot App, las tablas se borran y se vuelven a generar con la información inicial**
 
 **Se comparte una colección de postman con request para prueba**

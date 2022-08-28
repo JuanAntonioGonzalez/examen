@@ -26,7 +26,7 @@ INSERT INTO PREGUNTAS (pregunta, respuesta_uno, respuesta_dos, respuesta_tres, r
 INSERT INTO EXAMEN (nombre_examen) VALUES ("Java Basico");
 
 INSERT INTO LOCACION(ciudad, zona_horaria) VALUES ("México", "CDT");
-INSERT INTO LOCACION(ciudad, zona_horaria) VALUES ("Hongkong", "WST");
+INSERT INTO LOCACION(ciudad, zona_horaria) VALUES ("Hongkong", "HKT");
 
 INSERT INTO ESTUDIANTE (nombre, edad, id_locacion) VALUES ("Jaun Antonio González", 25, 1);
 INSERT INTO ESTUDIANTE (nombre, edad, id_locacion) VALUES ("Angel Pifarrer", 30, 2);

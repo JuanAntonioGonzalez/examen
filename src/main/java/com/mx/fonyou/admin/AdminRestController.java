@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mx.fonyou.entity.AgendaExamenEntity;
 import com.mx.fonyou.entity.EstudianteEntity;
 import com.mx.fonyou.entity.ResultadoEntity;
+import com.mx.fonyou.request.AgendaResponse;
 import com.mx.fonyou.security.repository.ResultadoRepository;
 import com.mx.fonyou.security.service.ExamenServiceImpl;
 
@@ -44,6 +46,12 @@ public class AdminRestController {
     public EstudianteEntity addEstudiante(@RequestBody EstudianteEntity estudiante) throws Exception {
     	
 		return examenServiceImpl.addEstudiante(estudiante);
+    }
+    
+    @RequestMapping(value = "agendaExamen", method = RequestMethod.POST)
+    public AgendaResponse agendaExamen(@RequestBody AgendaExamenEntity agenda) throws Exception {
+    	
+		return examenServiceImpl.agendaFechaExamen(agenda);
     }
     
 }
